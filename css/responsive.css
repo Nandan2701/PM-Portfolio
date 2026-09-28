@@ -1,0 +1,163 @@
+/* ==========================================================================
+   RESPONSIVE STYLES — Multi-View Adaptations (<992px, <768px, <480px)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .site-wrapper {
+    padding: 0 var(--space-4);
+  }
+
+  .article-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .hero-profile-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .profile-photo-frame {
+    width: 220px;
+    height: 300px;
+  }
+
+  :root {
+    --banner-height: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .masthead-inner {
+    margin-left: 0;
+    padding: 0 var(--space-4);
+  }
+
+  .hero-profile-container {
+    margin-left: 0;
+    padding: 0 var(--space-4);
+  }
+
+  .masthead-nav {
+    gap: var(--space-3);
+  }
+
+  .nav-link {
+    font-size: var(--text-xs);
+  }
+
+  .hero-compact {
+    padding: var(--space-6) 0 var(--space-2);
+  }
+
+  .hero-title {
+    font-size: var(--text-xl);
+  }
+
+  .hero-btn-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-btn-row .btn {
+    width: 100%;
+    min-height: 44px;
+  }
+
+  .home-section {
+    padding: var(--space-5);
+    margin: var(--space-6) 0;
+  }
+
+  .ambient-studio-box {
+    padding: 44px 18px 36px;
+  }
+
+  .compact-product-grid,
+  .products-feature-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .features-list {
+    grid-template-columns: 1fr;
+  }
+
+  .teardown-step-card {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .how-i-work-teaser {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .how-i-work-teaser .btn {
+    width: 100%;
+  }
+
+  .subpage-title {
+    font-size: var(--text-xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-name {
+    display: none;
+  }
+
+  .masthead-nav {
+    gap: 4px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .cpc-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .pfc-action-row {
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .pfc-btn-primary {
+    min-height: 44px;
+    padding: 10px 14px;
+  }
+
+  .pfc-btn-video {
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cluster-primary-row,
+  .cluster-secondary-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-brand {
+    width: 100%;
+    max-width: 440px;
+    justify-content: center;
+  }
+
+  .bottom-signoff {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+  }
+}
+
+

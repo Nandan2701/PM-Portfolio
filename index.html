@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandan Bhole — Product Management Portfolio</title>
+    <meta name="description"
+        content="Nandan Bhole, Final-Year Engineering @ VNIT Nagpur. Product Management Intern Candidate. Building high-density AI products & analyzing product friction.">
+
+    <!-- Typography: Newsreader + Plus Jakarta Sans + JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- Modular Design System -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/deck.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- High-Performance Video Preload for Instant In-Browser Playback -->
+    <link rel="preload" href="assets/videos/Tulam.mp4" as="video" type="video/mp4">
+
+    <!-- Zero-Scroll-Drop Engine: Prevents browser from restoring bottom scroll or jumping to #contact on open -->
+    <script>
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        if (window.location.hash === '#contact') {
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+        }
+        window.scrollTo(0, 0);
+        if (document.documentElement) document.documentElement.scrollTop = 0;
+    </script>
+</head>
+
+<body>
+
+    <!-- STICKY MASTHEAD NAVIGATION (Approved Spec: Variation 2 + About Me Last) -->
+    <header class="masthead">
+        <div class="masthead-inner">
+            <nav class="masthead-nav">
+                <a href="#home" class="nav-link" id="nav-link-home" title="Home">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -1px; margin-right: 4px; display: inline-block;">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                    <span>Home</span>
+                </a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#case-study" class="nav-link">Case Study</a>
+                <a href="#articles" class="nav-link">Articles</a>
+                <a href="#about" class="nav-link">About Me</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========================================================================= -->
+    <!-- PANORAMIC VNIT BANNER (EXACT 360px DEPTH WITH SMOOTH FADED GRADIENT ENDINGS) -->
+    <!-- ========================================================================= -->
+    <div class="banner-container-wrap" id="home-banner" onclick="openCampusModal()">
+        <div class="banner-strip-inner">
+            <img src="assets/images/vnit_banner.jpg"
+                alt="Visvesvaraya National Institute of Technology (VNIT) Nagpur Campus" class="panoramic-strip-img">
+            <div class="panoramic-blend-overlay"></div>
+        </div>
+    </div>
+
+    <main class="site-main">
+
+        <!-- ========================================================================= -->
+        <!-- VIEW 0: HOME (HERO PROFILE, STREAMLINED SECTIONS, ZERO FLUFF)             -->
+        <!-- ========================================================================= -->
+        <div id="view-home" class="view active">
+
+            <!-- HERO PROFILE SECTION (LEFT-SHIFTED LAYOUT) -->
+            <section class="hero-profile-section">
+                <div class="hero-profile-container">
+                    <div class="hero-profile-grid reveal-node">
+
+                        <!-- ENLARGED PHOTO ON LEFT-MOST SIDE (280px x 385px) -->
+                        <div class="profile-photo-frame">
+                            <img src="assets/images/photo.jpg" alt="Nandan Bhole" class="profile-photo-img">
+                        </div>
+
+                        <!-- RIGHT COLUMN: NAME + INLINE MONOSPACE BYLINE + 2 SENTENCES + CTAS -->
+                        <div class="profile-info-col">
+                            <h1 class="hero-name">Nandan Bhole</h1>
+
+                            <!-- APPROVED EDITORIAL BYLINE (VARIATION 03: GEIST SWISS ENGINEERING MODERNISM) -->
+                            <div class="editorial-byline-strip">
+                                <span class="byline-delphi">
+                                    <span class="byline-dot"></span>
+                                    Ex-Intern @ Delphi Analytics
+                                </span>
+                                <span class="byline-divider">/</span>
+                                <span class="byline-vnit">VNIT Nagpur &mdash; '27</span>
+                            </div>
+
+                            <!-- HERO HEADLINE (APPROVED: OPTION A / VARIATION 11 — CONNECTIVE ITALIC BRIDGES) -->
+                            <div class="hero-headline-wrap">
+                                <h2 class="hero-standalone-headline">
+                                    <span class="hero-hl-line">
+                                        <span class="hl-anchor">Designing and shipping</span>
+                                        <span class="hl-bridge-serif">products from</span>
+                                        <span class="hl-anchor">0&rarr;1</span>,
+                                    </span>
+                                    <span class="hero-hl-line">
+                                        <span class="hl-bridge-serif">centered entirely around</span>
+                                        <span class="hl-anchor">users.</span>
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- CLEAN ARCHITECTURAL HAIRLINE -->
+                    <hr class="section-hairline">
+                </div>
+            </section>
+
+            <!-- HOME SECTIONS (CENTERED EDITORIAL CONTAINER) -->
+            <div class="site-wrapper">
+
+                <!-- Section 1: 01. Live Products (Concept B: Warm Studio Ambient Wash) -->
+                <section class="freed-editorial-section" id="section-products-teaser">
+                    <div class="ambient-studio-box">
+                        <!-- 1. CENTERED SECTION TITLE & 1-SECOND HEADLINE -->
+                        <header class="editorial-section-header reveal-node">
+                            <div class="ambient-glow-capsule">
+                                <span class="ambient-star">✦</span>
+                                <span class="editorial-section-kicker">01 / LIVE PRODUCTS</span>
+                            </div>
+                            <h2 class="editorial-section-title">Live Products</h2>
+                        </header>
+
+                        <!-- Dynamic Product Feature Grid -->
+                        <div class="products-feature-grid" id="home-products-grid" style="width: 100%;">
+                            <!-- Injected dynamically from data.js -->
+                        </div>
+
+                        <!-- Centered Bottom Action CTA -->
+                        <div class="editorial-section-bottom-action">
+                            <a href="#products" class="btn btn-secondary">
+                                <span>Explore Full Product Specs & Architectures</span>
+                                <span style="font-size: 14px;">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 2: 02. Case Study (Concept B: Warm Studio Ambient Wash) -->
+                <section class="case-study-section" id="section-case-study">
+                    <div class="ambient-studio-box">
+                        <!-- 1. CENTERED SECTION TITLE -->
+                        <header class="editorial-section-header reveal-node">
+                            <div class="ambient-glow-capsule">
+                                <span class="ambient-star">✦</span>
+                                <span class="editorial-section-kicker">02 / PRODUCT TEARDOWN</span>
+                            </div>
+                            <h2 class="editorial-section-title">Case Study</h2>
+                        </header>
+
+                    <!-- 2. CENTRAL SLIDE CONTAINER FLANKED BY < AND > ARROWS (ZERO DEAD SPACE) -->
+                    <div class="deck-stage-wrapper reveal-node">
+
+                        <!-- LEFT NAV ARROW (<) -->
+                        <button class="nav-arrow-btn nav-prev" id="prev-btn" aria-label="Previous Slide"
+                            onclick="prevSlide()" disabled title="Previous Slide">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+
+                        <!-- THE ZERO-WHITESPACE CANVAS WRAPPER -->
+                        <div class="deck-canvas-wrapper" id="deckCanvasWrap">
+                            <div class="slide-container">
+                                <!-- Persistent Sidebar -->
+                                <div class="sidebar">
+                                    <div class="chevron" id="sidebar-chevron">></div>
+                                    <div id="milestones-container"></div>
+                                    <div class="sidebar-author">Product Teardown by Nandan</div>
+                                </div>
+
+                                <!-- Dynamic Main Content -->
+                                <div class="main-content">
+
+                                    <!-- Slide 1: Introduction Cover (Modern Hero Showcase) -->
+                                    <div id="slide-view-1" class="slide-view active">
+                                        <div class="slide-1-layout">
+                                            <!-- Left Hero -->
+                                            <div class="slide-1-left-hero">
+                                                <div class="slide-1-top-badge">
+                                                    <span>🔍</span> Product Teardown & Case Study
+                                                </div>
+
+                                                <h1 class="slide-1-h1">
+                                                    The Rapido Trust Gap: <span>The Hidden Anxiety</span> Between
+                                                    Booking and Boarding.
+                                                </h1>
+
+                                                <p class="slide-1-sub">
+                                                    A Product Case Study on solving <strong>'Black-Box Anxiety'</strong>
+                                                    to increase User
+                                                    Retention.
+                                                </p>
+
+                                                <div class="slide-1-hook-banner">
+                                                    <span>💡</span>
+                                                    <div>How we uncovered the root cause of rider anxiety and built a
+                                                        solution to restore trust.
+                                                        👉</div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Right Phone Mockup with Dialogue Bubbles -->
+                                            <div style="position: relative; display: flex; justify-content: center;">
+                                                <div class="phone-mockup-wrap">
+                                                    <img src="assets/rapido/User Journey/6.png" class="phone-screen-img"
+                                                        alt="Rapido Matching Screen">
+                                                </div>
+
+                                                <!-- Pinpoint Dialogue Bubbles -->
+                                                <div class="v1-bubble b-cash">
+                                                    <span>💸</span> "Will I have to pay cash?"
+                                                </div>
+                                                <div class="v1-bubble b-driver">
+                                                    <span>👤</span> "Is this really him?"
+                                                </div>
+                                                <div class="v1-bubble b-plate">
+                                                    <span>🛵</span> "Is it a different bike?"
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 2: Defining the Business Goal (Split Executive View) -->
+                                    <div id="slide-view-2" class="slide-view">
+                                        <div class="slide-2-container">
+                                            <!-- Header -->
+                                            <div class="slide-2-top">
+                                                <h2 class="slide-2-h2">Defining the Business Goal</h2>
+                                                <p class="slide-2-sub">Setting the strategic direction, prioritization,
+                                                    and metrics for the
+                                                    entire product teardown.</p>
+                                            </div>
+
+                                            <!-- Split Executive Container -->
+                                            <div class="split-container">
+                                                <!-- Left Mandate Card -->
+                                                <div class="mandate-card">
+                                                    <div>
+                                                        <div class="mandate-badge-row">
+                                                            <span class="mandate-tag">Strategic Mandate</span>
+                                                            <span class="mandate-sub-label">Step 1: The "Why"</span>
+                                                        </div>
+                                                        <div class="mandate-quote">
+                                                            "To increase <span>user retention</span> by solving the
+                                                            black box anxiety and trust
+                                                            issues that safety-conscious commuters face during the
+                                                            ride-matching phase."
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mandate-context-box">
+                                                        <strong>🎯 Why This Goal Matters:</strong> It is not just a
+                                                        superficial UX problem; it
+                                                        directly prevents premature churn, protects high-LTV users, and
+                                                        anchors the North Star
+                                                        metric.
+                                                    </div>
+
+                                                    <div class="mandate-footer">
+                                                        <span>North Star Target:</span>
+                                                        <strong style="color: #F9C935;">Eliminate Pre-Ride
+                                                            Churn</strong>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Right 3 Pillars Stack -->
+                                                <div class="pillars-stack">
+                                                    <!-- Pillar 1: Black-Box Anxiety -->
+                                                    <div class="pillar-row">
+                                                        <div class="p-icon-box icon-red">🔗</div>
+                                                        <div class="p-content">
+                                                            <div class="p-title-row">
+                                                                <span class="p-title">1. Black-Box Anxiety</span>
+                                                                <span class="p-tag tag-red">Root Cause</span>
+                                                            </div>
+                                                            <p class="p-desc">
+                                                                Passengers experience high anxiety immediately upon
+                                                                matching due to fear of
+                                                                unregistered or mismatched vehicles. Zero upfront
+                                                                verification triggers acute
+                                                                distrust.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Pillar 2: The Suspense Phase -->
+                                                    <div class="pillar-row">
+                                                        <div class="p-icon-box icon-orange">⏱️</div>
+                                                        <div class="p-content">
+                                                            <div class="p-title-row">
+                                                                <span class="p-title">2. The Suspense Phase</span>
+                                                                <span class="p-tag tag-orange">The 3-Min Friction
+                                                                    Window</span>
+                                                            </div>
+                                                            <p class="p-desc">
+                                                                Users don't cancel instantly, but wait in suspense
+                                                                wondering who and what
+                                                                vehicle will actually arrive, acting as their own manual
+                                                                QA filter.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Pillar 3: Reduce Early Cancellations (HERO LEVER) -->
+                                                    <div class="pillar-row highlight-lever">
+                                                        <div class="p-icon-box icon-green">✅</div>
+                                                        <div class="p-content">
+                                                            <div class="p-title-row">
+                                                                <span class="p-title">3. Reduce Early
+                                                                    Cancellations</span>
+                                                                <span class="p-tag tag-green">The Business Lever</span>
+                                                            </div>
+                                                            <p class="p-desc">
+                                                                By establishing trust before the Captain arrives, we aim
+                                                                to decrease manual
+                                                                cancellations in the first 3 minutes, directly lifting
+                                                                Day-1 Retention and
+                                                                stopping ARPU bleed.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 3 Actual Content -->
+                                    <div id="slide-view-3" class="slide-view">
+                                        <div class="slide-3-container">
+                                            <div class="slide-3-top">
+                                                <h2 class="slide-3-h2">Understanding the real users' friction points
+                                                </h2>
+                                                <p class="slide-3-sub">We isolated two high-value segments actively
+                                                    abandoning the platform.</p>
+                                            </div>
+
+                                            <div class="slide-3-cards">
+                                                <!-- Persona 1 (Finalized Mobile UI) -->
+                                                <div class="mobile-frame">
+                                                    <div class="mobile-notch"></div>
+                                                    <div class="mobile-content">
+                                                        <div class="p-header">
+                                                            <div class="p-avatar">👩🏻‍🎓</div>
+                                                            <div class="p-name">Shruti</div>
+                                                        </div>
+                                                        <div class="p-section">
+                                                            <div class="p-label">About</div>
+                                                            <div class="p-text">Age 21-25 • College Student / Junior
+                                                                Intern • Lives in
+                                                                Tier-1/Tier-2 City (Nagpur)</div>
+                                                        </div>
+                                                        <div class="p-section">
+                                                            <div class="p-label">Context</div>
+                                                            <div class="p-text">High frequency user (6+ rides/week). She
+                                                                wants to save money,
+                                                                but safety is the ultimate dealbreaker when commuting at
+                                                                night.</div>
+                                                        </div>
+                                                        <div class="p-section">
+                                                            <div class="p-label">Jobs to be Done (JTBD)</div>
+                                                            <div class="p-text-italic">"Get me to my office on time
+                                                                without breaking my budget
+                                                                or feeling unsafe."</div>
+                                                        </div>
+                                                        <div class="p-section p-highlight-red">
+                                                            <div class="p-label">Core Pain</div>
+                                                            <div class="p-text">The "Driver Allocated" screen spikes her
+                                                                anxiety. She fears fake
+                                                                vehicles and reckless riders. Fundamentally distrusts
+                                                                the default safety
+                                                                baseline.</div>
+                                                        </div>
+                                                        <div class="p-section p-highlight-yellow">
+                                                            <div class="p-label">Current Workaround</div>
+                                                            <div class="p-text">She rigorously filters drivers by
+                                                                rating. If the rating is even
+                                                                slightly low (below 4.5), she cancels the ride and eats
+                                                                the penalty fee rather
+                                                                than take the risk.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Persona 2 (Finalized Mobile UI) -->
+                                                <div class="mobile-frame">
+                                                    <div class="mobile-notch"></div>
+                                                    <div class="mobile-content">
+                                                        <div class="p-header">
+                                                            <div class="p-avatar">👨🏽‍💻</div>
+                                                            <div class="p-name">Karthik</div>
+                                                        </div>
+                                                        <div class="p-section">
+                                                            <div class="p-label">About</div>
+                                                            <div class="p-text">Age 26-32 • Mid-Level Corporate
+                                                                Professional • Lives in Major
+                                                                Metro (Hyderabad)</div>
+                                                        </div>
+                                                        <div class="p-section">
+                                                            <div class="p-label">Context</div>
+                                                            <div class="p-text">He has the money for cabs but chooses
+                                                                bikes to save 30 minutes
+                                                                of his day. He expects the service to be as polished as
+                                                                his corporate life.
+                                                            </div>
+                                                        </div>
+                                                        <div class="p-section">
+                                                            <div class="p-label">Jobs to be Done (JTBD)</div>
+                                                            <div class="p-text-italic">"Provide a professional
+                                                                transaction where I don't have to
+                                                                engage in uncomfortable negotiations with drivers."
+                                                            </div>
+                                                        </div>
+                                                        <div class="p-section p-highlight-red">
+                                                            <div class="p-label">Core Pain (Offline Extortion)</div>
+                                                            <div class="p-text">He views Rapido as a "cheap, desi" app
+                                                                that fails to govern its
+                                                                supply side, forcing him into unsafe offline rides
+                                                                without insurance.</div>
+                                                        </div>
+                                                        <div class="p-section p-highlight-yellow">
+                                                            <div class="p-label">Current Workaround</div>
+                                                            <div class="p-text">He is tired of fighting. Instead of
+                                                                arguing with Rapido drivers,
+                                                                he just opens Uber Moto. He treats the extra cost as an
+                                                                "accountability tax."
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Slide 4: Journey Map 1/3 -->
+                                    <div id="slide-view-4" class="slide-view">
+                                        <div class="slide-4-container">
+                                            <div class="slide-4-top">
+                                                <h2 class="slide-4-h2">The Journey Map: Initial Frictionless Flow</h2>
+                                                <p class="slide-4-sub">The early funnel is incredibly smooth. Users
+                                                    seamlessly open the app and
+                                                    set a destination.</p>
+                                            </div>
+
+                                            <div class="journey-grid-container">
+                                                <div class="journey-grid">
+                                                    <div class="journey-step">
+                                                        <img src="assets/rapido/User Journey/1.png"
+                                                            style="width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: 12px; border: 1px solid #E5E7EB; margin-bottom: 12px;"
+                                                            alt="Step 1" />
+                                                        <div class="journey-step-label">Step 1</div>
+                                                        <div class="journey-step-desc">Open App</div>
+                                                        <div class="v1-quote">"Oh nice, loaded instantly."</div>
+                                                    </div>
+                                                    <div class="journey-step">
+                                                        <img src="assets/rapido/User Journey/2.png"
+                                                            style="width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: 12px; border: 1px solid #E5E7EB; margin-bottom: 12px;"
+                                                            alt="Step 2" />
+                                                        <div class="journey-step-label">Step 2</div>
+                                                        <div class="journey-step-desc">Enter Destination</div>
+                                                        <div class="v1-quote">"Office. Need to get there fast."</div>
+                                                    </div>
+                                                    <div class="journey-step">
+                                                        <img src="assets/rapido/User Journey/3.png"
+                                                            style="width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: 12px; border: 1px solid #E5E7EB; margin-bottom: 12px;"
+                                                            alt="Step 3" />
+                                                        <div class="journey-step-label">Step 3</div>
+                                                        <div class="journey-step-desc">View Options</div>
+                                                        <div class="v1-quote">"Bike is the cheapest and fastest option."
+                                                        </div>
+                                                    </div>
+                                                    <div class="journey-step">
+                                                        <img src="assets/rapido/User Journey/4.png"
+                                                            style="width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: 12px; border: 1px solid #E5E7EB; margin-bottom: 12px;"
+                                                            alt="Step 4" />
+                                                        <div class="journey-step-label">Step 4</div>
+                                                        <div class="journey-step-desc">Select Ride</div>
+                                                        <div class="v1-quote">"Booking it now."</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 5: Journey Map 2/3 -->
+                                    <div id="slide-view-5" class="slide-view">
+                                        <div class="slide-4-container">
+                                            <div class="slide-4-top">
+                                                <h2 class="slide-4-h2">The Journey Map: Waiting for Captain</h2>
+                                                <p class="slide-4-sub">The allocation process begins. Emotion remains
+                                                    neutral as the system
+                                                    searches.</p>
+                                            </div>
+
+                                            <div class="journey-grid-container">
+                                                <div class="grid-breakout">
+                                                    <div class="journey-step">
+                                                        <img src="assets/rapido/User Journey/5.png"
+                                                            style="width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: 12px; border: 1px solid #E5E7EB; margin-bottom: 12px;"
+                                                            alt="Step 5" />
+                                                        <div class="journey-step-label">Step 5</div>
+                                                        <div class="journey-step-desc">Searching</div>
+                                                        <div class="v1-quote">"Okay, finding a captain..."</div>
+                                                    </div>
+                                                    <div class="journey-step">
+                                                        <img src="assets/rapido/User Journey/6.png"
+                                                            style="width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: 12px; border: 1px solid #E5E7EB; margin-bottom: 12px;"
+                                                            alt="Step 6" />
+                                                        <div class="journey-step-label">Step 6</div>
+                                                        <div class="journey-step-desc">Locating</div>
+                                                        <div class="v1-quote">"Still searching..."</div>
+                                                    </div>
+                                                    <div class="journey-step">
+                                                        <img src="assets/rapido/User Journey/7.png"
+                                                            style="width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: 12px; border: 1px solid #E5E7EB; margin-bottom: 12px;"
+                                                            alt="Step 7" />
+                                                        <div class="journey-step-label">Step 7</div>
+                                                        <div class="journey-step-desc">Ping Sent</div>
+                                                        <div class="v1-quote">"Alright, asked someone."</div>
+                                                    </div>
+                                                    <div class="journey-step">
+                                                        <img src="assets/rapido/User Journey/8.png"
+                                                            style="width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: 12px; border: 1px solid #E5E7EB; margin-bottom: 12px;"
+                                                            alt="Step 8" />
+                                                        <div class="journey-step-label">Step 8</div>
+                                                        <div class="journey-step-desc">Awaiting Acceptance</div>
+                                                        <div class="v1-quote">"Why is this taking 30 seconds?"</div>
+                                                    </div>
+                                                    <div class="journey-step">
+                                                        <img src="assets/rapido/User Journey/9.png"
+                                                            style="width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: 12px; border: 1px solid #E5E7EB; margin-bottom: 12px;"
+                                                            alt="Step 9" />
+                                                        <div class="journey-step-label">Step 9</div>
+                                                        <div class="journey-step-desc">Captain Found</div>
+                                                        <div class="v1-quote">"Finally, got one. Hope he is close."
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 6: Journey Map 3/3 -->
+                                    <div id="slide-view-6" class="slide-view">
+                                        <div class="slide-4-container">
+                                            <div class="slide-4-top">
+                                                <h2 class="slide-4-h2">The Journey Map: The 'Happy Path' Completion</h2>
+                                                <p class="slide-4-sub">For users who survive the allocation wait, the
+                                                    core service delivers
+                                                    flawlessly.</p>
+                                            </div>
+
+                                            <div class="journey-grid-container">
+                                                <div class="journey-grid">
+                                                    <div class="journey-step">
+                                                        <img src="assets/rapido/User Journey/10.png"
+                                                            style="width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: 12px; border: 1px solid #E5E7EB; margin-bottom: 12px;"
+                                                            alt="Step 10" />
+                                                        <div class="journey-step-label">Step 10</div>
+                                                        <div class="journey-step-desc">Captain Arrives</div>
+                                                        <div class="v1-quote">"Nice, he's here on time."</div>
+                                                    </div>
+                                                    <div class="journey-step">
+                                                        <img src="assets/rapido/User Journey/11.png"
+                                                            style="width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: 12px; border: 1px solid #E5E7EB; margin-bottom: 12px;"
+                                                            alt="Step 11" />
+                                                        <div class="journey-step-label">Step 11</div>
+                                                        <div class="journey-step-desc">Ride Starts</div>
+                                                        <div class="v1-quote">"Helmet on, let's navigate the traffic."
+                                                        </div>
+                                                    </div>
+                                                    <div class="journey-step">
+                                                        <img src="assets/rapido/User Journey/12.png"
+                                                            style="width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: 12px; border: 1px solid #E5E7EB; margin-bottom: 12px;"
+                                                            alt="Step 12" />
+                                                        <div class="journey-step-label">Step 12</div>
+                                                        <div class="journey-step-desc">Reaching Destination</div>
+                                                        <div class="v1-quote">"Almost there, bike is definitely faster."
+                                                        </div>
+                                                    </div>
+                                                    <div class="journey-step">
+                                                        <img src="assets/rapido/User Journey/13.png"
+                                                            style="width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: 12px; border: 1px solid #E5E7EB; margin-bottom: 12px;"
+                                                            alt="Step 13" />
+                                                        <div class="journey-step-label">Step 13</div>
+                                                        <div class="journey-step-desc">Payment & Rating</div>
+                                                        <div class="v1-quote">"Paid via UPI. 5 stars."</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 7: Core Problems Notion Table -->
+                                    <div id="slide-view-7" class="slide-view">
+                                        <div class="slide-cp-container">
+                                            <!-- Header -->
+                                            <div class="slide-cp-top">
+                                                <h2 class="slide-cp-h2">Core Problems Affecting Retention & Trust</h2>
+                                                <p class="slide-cp-sub">Empirical research and user sentiment analysis
+                                                    revealed 6 critical
+                                                    failure points across the booking and ride lifecycle.</p>
+                                            </div>
+
+                                            <!-- Full Notion Table with All Values -->
+                                            <div class="notion-table-wrapper">
+                                                <div class="notion-tbl-head">
+                                                    <div>Problem Archetype</div>
+                                                    <div>User Reality & Root Cause</div>
+                                                    <div>Behavioral & Business Impact</div>
+                                                </div>
+
+                                                <!-- 1. Wait Times -->
+                                                <div class="notion-tbl-row">
+                                                    <div class="col-prob">
+                                                        <div class="prob-title-row">1. Long Wait Times & Delays</div>
+                                                        <span class="prob-pill pill-friction">Friction</span>
+                                                    </div>
+                                                    <div class="col-reality">
+                                                        12–15 minute wait times during peak rush hours with erratic
+                                                        driver GPS tracking and
+                                                        unpredictable arrival delays.
+                                                    </div>
+                                                    <div class="col-impact">
+                                                        📉 <strong>Impact:</strong> Dual-booking and immediate drop-off
+                                                        to competitor apps (Uber
+                                                        Moto).
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2. Unregistered Vehicles (CORE HIGHLIGHT ROW) -->
+                                                <div class="notion-tbl-row row-core-highlight">
+                                                    <div class="col-prob">
+                                                        <div class="prob-title-row">🚨 2. Unregistered Vehicles</div>
+                                                        <span class="prob-pill pill-critical">Primary Threat (Core
+                                                            Bottleneck)</span>
+                                                    </div>
+                                                    <div class="col-reality">
+                                                        Matched bike details in-app don't match the arriving physical
+                                                        vehicle. Zero upfront
+                                                        trust verification triggers acute safety fear.
+                                                    </div>
+                                                    <div class="col-impact">
+                                                        🛑 <strong>Symptom:</strong> Users act as manual QA filters,
+                                                        cancelling rides within 3
+                                                        mins.
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3. Offline Extortion -->
+                                                <div class="notion-tbl-row">
+                                                    <div class="col-prob">
+                                                        <div class="prob-title-row">3. Offline Cash Extortion</div>
+                                                        <span class="prob-pill pill-revenue">Revenue Risk</span>
+                                                    </div>
+                                                    <div class="col-reality">
+                                                        Captains demand direct cash/UPI and cancel in-app rides,
+                                                        instantly voiding digital
+                                                        insurance and real-time safety tracking.
+                                                    </div>
+                                                    <div class="col-impact">
+                                                        💸 <strong>Impact:</strong> 100% lost platform commission &
+                                                        corporate user churn.
+                                                    </div>
+                                                </div>
+
+                                                <!-- 4. Number Leakage -->
+                                                <div class="notion-tbl-row">
+                                                    <div class="col-prob">
+                                                        <div class="prob-title-row">4. Phone Number Exposure</div>
+                                                        <span class="prob-pill pill-safety">Safety Breach</span>
+                                                    </div>
+                                                    <div class="col-reality">
+                                                        Platform exposes raw user numbers during coordination, enabling
+                                                        post-ride WhatsApp
+                                                        messages and unwanted calls.
+                                                    </div>
+                                                    <div class="col-impact">
+                                                        ⛔ <strong>Impact:</strong> Permanent brand trust destruction &
+                                                        immediate app uninstall.
+                                                    </div>
+                                                </div>
+
+                                                <!-- 5. Helmet Hygiene -->
+                                                <div class="notion-tbl-row">
+                                                    <div class="col-prob">
+                                                        <div class="prob-title-row">5. Helmet Quality Deficit</div>
+                                                        <span class="prob-pill pill-friction">Quality Gap</span>
+                                                    </div>
+                                                    <div class="col-reality">
+                                                        Missing, broken, or sweat-stained helmets that violate safety
+                                                        standards and basic
+                                                        personal hygiene.
+                                                    </div>
+                                                    <div class="col-impact">
+                                                        📉 <strong>Impact:</strong> Reinforces perception of Rapido as a
+                                                        low-accountability
+                                                        service.
+                                                    </div>
+                                                </div>
+
+                                                <!-- 6. Navigation Friction -->
+                                                <div class="notion-tbl-row">
+                                                    <div class="col-prob">
+                                                        <div class="prob-title-row">6. Pickup Coordination</div>
+                                                        <span class="prob-pill pill-friction">Logistics</span>
+                                                    </div>
+                                                    <div class="col-reality">
+                                                        Inaccurate map pickup pins and landmark ambiguity require
+                                                        multiple manual calls while
+                                                        standing on busy roadways.
+                                                    </div>
+                                                    <div class="col-impact">
+                                                        ⚡ <strong>Impact:</strong> Increases cancellation fatigue for
+                                                        drivers and commuters.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 8 (formerly 7) Actual Content -->
+                                    <div id="slide-view-8" class="slide-view">
+                                        <div class="slide-7-container">
+                                            <div class="slide-7-top">
+                                                <h2 class="slide-7-h2">Ruthless Prioritization: The Trust Bottleneck
+                                                </h2>
+                                                <p class="slide-7-sub">We mapped the core problems against our Business
+                                                    Goal. Only one survives
+                                                    the filter.</p>
+                                            </div>
+
+                                            <div class="prioritization-feed">
+                                                <div class="prioritization-card rejected">
+                                                    <div class="p-card-header">
+                                                        <div class="p-card-title">1. Lack of Digital Contract
+                                                            Enforcement</div>
+                                                        <div class="p-card-badge rejected-badge">REJECTED</div>
+                                                    </div>
+                                                    <div class="p-card-body">Due to a lack of digital contract
+                                                        enforcement, drivers force riders
+                                                        into offline cash transactions upon arrival. This causes severe
+                                                        revenue leakage and
+                                                        drives high-LTV corporate users to churn to competitors for
+                                                        accountability.</div>
+                                                    <div class="pm-insight">Why we skipped it: This is a revenue leak,
+                                                        but it happens at pickup.
+                                                        It doesn't stop the initial drop-off immediately after matching.
+                                                    </div>
+                                                </div>
+
+                                                <div class="prioritization-card selected">
+                                                    <div class="p-card-header">
+                                                        <div class="p-card-title">2. App Lag & Safety Anxiety
+                                                            (Unregistered Vehicles)</div>
+                                                        <div class="p-card-badge selected-badge">SELECTED</div>
+                                                    </div>
+                                                    <div class="p-card-body">Because the app lacks physical vehicle
+                                                        verification,
+                                                        safety-conscious users fear getting on unregistered bikes. This
+                                                        fear leads to manual
+                                                        ride cancellations immediately after matching.</div>
+                                                    <div class="pm-insight">The 'Why': This is the exact point of churn.
+                                                        If users cancel
+                                                        instantly out of fear after matching, the rest of the journey
+                                                        doesn't even exist.
+                                                        Solving this directly hits our Business Goal.</div>
+                                                </div>
+
+                                                <div class="prioritization-card rejected">
+                                                    <div class="p-card-header">
+                                                        <div class="p-card-title">3. Privacy Leak & Harassment</div>
+                                                        <div class="p-card-badge rejected-badge">REJECTED</div>
+                                                    </div>
+                                                    <div class="p-card-body">The platform exposes raw user phone numbers
+                                                        to drivers during the
+                                                        coordination phase. This lack of persistent number masking
+                                                        enables post-ride harassment
+                                                        on WhatsApp, permanently destroying brand trust.</div>
+                                                    <div class="pm-insight">Why we skipped it: Severe trust issue, but
+                                                        happens post-ride. We
+                                                        need to fix the top of the funnel (matching phase) first.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 9 Actual Content -->
+                                    <div id="slide-view-9" class="slide-view">
+                                        <div class="slide-8-container">
+                                            <div class="slide-8-top">
+                                                <h2 class="slide-8-h2">Brainstorming & Solution Rationale</h2>
+                                                <p class="slide-8-sub">We mathematically scored 4 potential solutions
+                                                    using the
+                                                    Impact-Effort-Confidence framework to find the one that eliminates
+                                                    anxiety with minimal
+                                                    engineering cost.</p>
+                                            </div>
+
+                                            <div class="notion-table-card">
+                                                <table class="notion-styled-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="col-solution">Solution</th>
+                                                            <th class="col-num">Impact<br>(1-5)</th>
+                                                            <th class="col-num">Confidence<br>(1-5)</th>
+                                                            <th class="col-num">Effort<br>(1-5)</th>
+                                                            <th class="col-num">Total Score</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <span class="notion-solution-title">Per-Ride Visual
+                                                                    Handshake:</span> Require
+                                                                captains to submit proof of the original vehicle
+                                                                immediately after accepting a
+                                                                ride, before they can navigate to the user.
+                                                            </td>
+                                                            <td class="col-num">5</td>
+                                                            <td class="col-num">4</td>
+                                                            <td class="col-num">5</td>
+                                                            <td class="col-num">4.0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span class="notion-solution-title">Daily Bike
+                                                                    Selfie:</span> Captains must
+                                                                visually verify their original bike via camera before
+                                                                starting their daily
+                                                                shift.
+                                                            </td>
+                                                            <td class="col-num">4</td>
+                                                            <td class="col-num">4</td>
+                                                            <td class="col-num">5</td>
+                                                            <td class="col-num">3.2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span class="notion-solution-title">Two-Way Declaration
+                                                                    & Penalty:</span>
+                                                                Captain self-declares bike status upfront. If the User's
+                                                                post-ride review
+                                                                contradicts the Captain's declaration, the Captain faces
+                                                                a micro-penalty
+                                                                credited to the User.
+                                                            </td>
+                                                            <td class="col-num">3</td>
+                                                            <td class="col-num">3</td>
+                                                            <td class="col-num">2</td>
+                                                            <td class="col-num">4.5</td>
+                                                        </tr>
+                                                        <tr class="highlight-winner">
+                                                            <td>
+                                                                <div
+                                                                    style="display: flex; align-items: center; gap: 6px; margin-bottom: 2px;">
+                                                                    <span>⭐</span>
+                                                                    <span class="notion-solution-title"
+                                                                        style="color: #92400E;">Social Proof &
+                                                                        Penalty Loop:</span>
+                                                                </div>
+                                                                Display a pre-ride social proof score (e.g., "6/15
+                                                                riders confirmed original
+                                                                bike") to instantly ease user anxiety, followed by a
+                                                                frictionless post-ride
+                                                                survey. A "Yes" increases the captain's social proof
+                                                                counter for future rides,
+                                                                while a first "No" freezes their score and issues a
+                                                                strict warning. A second
+                                                                "No" triggers ongoing micro-penalties on future earnings
+                                                                until the captain
+                                                                physically re-verifies their vehicle at an offline
+                                                                Rapido hub.
+                                                            </td>
+                                                            <td class="col-num" style="color: #92400E;">5</td>
+                                                            <td class="col-num" style="color: #92400E;">4</td>
+                                                            <td class="col-num" style="color: #92400E;">2</td>
+                                                            <td class="col-num"
+                                                                style="font-weight: 800; font-size: 13px; color: #047857;">
+                                                                10.0
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="winner-callout-banner">
+                                                <span>✅</span>
+                                                <span><strong>Winning Solution: The Safety Engine (Social Proof
+                                                        System)</strong> — Prioritized
+                                                    with <strong>Impact: 5 | Confidence: 4 | Effort: 2</strong> (Total
+                                                    Score:
+                                                    <strong>10.0</strong> / Low effort, high impact, high
+                                                    confidence).</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 10 Actual Content -->
+                                    <div id="slide-view-10" class="slide-view">
+                                        <div class="slide-9-container">
+                                            <div class="slide-9-top">
+                                                <h2 class="slide-9-h2">The Solution Wireframes: 'The Safety Engine'</h2>
+                                                <p class="slide-9-sub">Replacing 'Black-Box Anxiety' with progressive
+                                                    Social Proof. Here is how
+                                                    the UI dynamically changes to guarantee trust.</p>
+                                            </div>
+
+                                            <div class="showcase-container">
+                                                <!-- HERO: 7th Step Pre-Ride Matching -->
+                                                <div class="hero-column">
+                                                    <div class="hero-tag">⭐ Solution Anchor</div>
+                                                    <div class="hero-phone">
+                                                        <img src="assets/rapido/7th_step.png"
+                                                            alt="Pre-Ride Allocation Screen">
+                                                    </div>
+                                                    <div class="hero-caption">
+                                                        ✅ <strong>Pre-Ride Trust Anchor</strong><br>
+                                                        <span
+                                                            style="font-size: 9.5px; font-weight: 500; color: #047857;">"Plate
+                                                            matched by 8
+                                                            recent riders"</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Arrow Flow -->
+                                                <div class="flow-separator">
+                                                    <span>Ride Ends</span>
+                                                    <span class="arrow">➔</span>
+                                                </div>
+
+                                                <!-- ALL 4 Post-Ride Rating Screens -->
+                                                <div class="ratings-section">
+                                                    <div class="ratings-tag">Post-Ride Dynamic Feedback & Verification
+                                                        Loop</div>
+
+                                                    <div class="ratings-grid">
+                                                        <!-- 5 Star -->
+                                                        <div class="rating-item">
+                                                            <div class="rating-phone">
+                                                                <img src="assets/rapido/rating_5_star.png"
+                                                                    alt="5 Star Rating Screen">
+                                                            </div>
+                                                            <div class="rating-caption c-5">5★ Same Plate</div>
+                                                        </div>
+
+                                                        <!-- 3 Star -->
+                                                        <div class="rating-item">
+                                                            <div class="rating-phone">
+                                                                <img src="assets/rapido/rating_3_star.png"
+                                                                    alt="3 Star Rating Screen">
+                                                            </div>
+                                                            <div class="rating-caption c-3">3★ Neutral Ride</div>
+                                                        </div>
+
+                                                        <!-- 2 Star -->
+                                                        <div class="rating-item">
+                                                            <div class="rating-phone">
+                                                                <img src="assets/rapido/rating_2_star.png"
+                                                                    alt="2 Star Rating Screen">
+                                                            </div>
+                                                            <div class="rating-caption c-2">2★ Penalty Loop</div>
+                                                        </div>
+
+                                                        <!-- 1 Star -->
+                                                        <div class="rating-item">
+                                                            <div class="rating-phone">
+                                                                <img src="assets/rapido/rating_1_star.png"
+                                                                    alt="1 Star Rating Screen">
+                                                            </div>
+                                                            <div class="rating-caption c-1">1★ Strict Flag</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- 4 Logic Cards Aligned Underneath -->
+                                                    <div class="logic-grid-4">
+                                                        <div class="logic-card c-5">
+                                                            <div class="badge">★★★★★ Social Proof</div>
+                                                            <div class="text">Positive validation. Captain's verified
+                                                                rider counter increments.
+                                                            </div>
+                                                        </div>
+                                                        <div class="logic-card c-3">
+                                                            <div class="badge">★★★ 3.0 Baseline</div>
+                                                            <div class="text">Standard ride logging with baseline trust
+                                                                counter updates.</div>
+                                                        </div>
+                                                        <div class="logic-card c-2">
+                                                            <div class="badge">★★ 2.0 Penalty Loop</div>
+                                                            <div class="text">Different plate flag. Captain enters
+                                                                micro-penalty loop.</div>
+                                                        </div>
+                                                        <div class="logic-card c-1">
+                                                            <div class="badge">★ 1.0 Strict Flag</div>
+                                                            <div class="text">Immediate penalty warning & freeze for
+                                                                mismatched vehicles.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 11 Actual Content -->
+                                    <div id="slide-view-11" class="slide-view">
+                                        <div class="slide-10-container">
+                                            <!-- Header -->
+                                            <div class="slide-10-top">
+                                                <h2 class="slide-10-h2">System Logic: The Self-Regulating Dual-Loop</h2>
+                                                <p class="slide-10-sub">This is not just a UI change; it is an economic
+                                                    feedback engine. It
+                                                    reinforces positive social proof while gracefully correcting bad
+                                                    actors without choking
+                                                    driver supply.</p>
+                                            </div>
+
+                                            <!-- 3-Stage Lifecycle Flow -->
+                                            <div class="stage-flow-row">
+                                                <div class="stage-flow-step">
+                                                    <div class="stage-num-badge">1</div>
+                                                    <div class="stage-flow-text">
+                                                        <span class="stage-flow-title">Stage 1: Pre-Ride Anchor</span>
+                                                        <span class="stage-flow-desc">Dynamic trust badge displayed;
+                                                            kills pre-ride cancellation
+                                                            anxiety.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="stage-flow-arrow">➔</div>
+                                                <div class="stage-flow-step">
+                                                    <div class="stage-num-badge">2</div>
+                                                    <div class="stage-flow-text">
+                                                        <span class="stage-flow-title">Stage 2: During Ride
+                                                            Silence</span>
+                                                        <span class="stage-flow-desc">UI remains completely silent; zero
+                                                            unnecessary mid-ride
+                                                            friction.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="stage-flow-arrow">➔</div>
+                                                <div class="stage-flow-step">
+                                                    <div class="stage-num-badge">3</div>
+                                                    <div class="stage-flow-text">
+                                                        <span class="stage-flow-title">Stage 3: Post-Ride Rating &
+                                                            Feedback</span>
+                                                        <span class="stage-flow-desc">Riders select quick tags below
+                                                            stars (Same vs. Different
+                                                            Plate) to update system values.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Main Dual-Loop Comparison Grid -->
+                                            <div class="dual-loop-grid">
+                                                <!-- 🟢 GREEN LOOP: 5-STAR SOCIAL PROOF -->
+                                                <div class="loop-column-card green-loop">
+                                                    <div class="loop-card-header">
+                                                        <div class="loop-card-title">
+                                                            <span>🟢 Loop 1: Social Proof & Reputation</span>
+                                                        </div>
+                                                        <div class="loop-badge">Happy Path (5★ / "Same Plate")</div>
+                                                    </div>
+
+                                                    <div class="step-row-list">
+                                                        <div class="step-row-item">
+                                                            <div class="step-row-header">
+                                                                <span>1. Positive Tag Selection</span>
+                                                                <span
+                                                                    style="color:#047857; font-size:10.5px; font-weight:800;">INPUT</span>
+                                                            </div>
+                                                            <div class="step-row-desc">Rider selects <strong>"Same
+                                                                    number plate"</strong> under
+                                                                the rating screen, confirming vehicle authenticity.
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="step-row-item">
+                                                            <div class="step-row-header">
+                                                                <span>2. Dynamic Trust Badge Display</span>
+                                                                <span
+                                                                    style="color:#047857; font-size:10.5px; font-weight:800;">ANCHOR</span>
+                                                            </div>
+                                                            <div class="step-row-desc">Captain's profile updates to
+                                                                display: <strong>"✅ Number
+                                                                    Plate Matched • By 8 recent riders"</strong> on
+                                                                future rides.</div>
+                                                        </div>
+
+                                                        <div class="step-row-item">
+                                                            <div class="step-row-header">
+                                                                <span>3. State Reset & Priority Boost</span>
+                                                                <span
+                                                                    style="color:#047857; font-size:10.5px; font-weight:800;">REWARD</span>
+                                                            </div>
+                                                            <div class="step-row-desc">Each positive verification keeps
+                                                                the trust counter high
+                                                                and automatically clears any previous warning status.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 🔴 RED LOOP: 1-STAR & 2-STAR PENALTY LOOP -->
+                                                <div class="loop-column-card red-loop">
+                                                    <div class="loop-card-header">
+                                                        <div class="loop-card-title">
+                                                            <span>🔴 Loop 2: The Progressive Margin Penalty</span>
+                                                        </div>
+                                                        <div class="loop-badge">Violations (1★-2★ / "Different Plate")
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="step-row-list">
+                                                        <div class="step-row-item">
+                                                            <div class="step-row-header">
+                                                                <span>1. Strike 1: Normal In-App Warning</span>
+                                                                <span
+                                                                    style="color:#B91C1C; font-size:10.5px; font-weight:800;">WARNING</span>
+                                                            </div>
+                                                            <div class="step-row-desc">Captain receives a standard
+                                                                advisory warning. Profile
+                                                                transparently reflects feedback (e.g. <em>7/8
+                                                                    verified</em>) without fines.
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="step-row-item">
+                                                            <div class="step-row-header">
+                                                                <span>2. Strike 2: Next Rider Flags Mismatch</span>
+                                                                <span
+                                                                    style="color:#B91C1C; font-size:10.5px; font-weight:800;">MARGIN
+                                                                    PENALTY</span>
+                                                            </div>
+                                                            <div class="step-row-desc">If the consecutive rider also
+                                                                selects "Different plate",
+                                                                system applies an <strong>X% deduction from ride
+                                                                    charges</strong>.</div>
+                                                        </div>
+
+                                                        <div class="step-row-item">
+                                                            <div class="step-row-header">
+                                                                <span>3. Resolution & Hub Re-Verification</span>
+                                                                <span
+                                                                    style="color:#B91C1C; font-size:10.5px; font-weight:800;">RE-VERIFY</span>
+                                                            </div>
+                                                            <div class="step-row-desc">Margin penalty continues on every
+                                                                ride until the Captain
+                                                                visits a <strong>physical Rapido Hub</strong> to
+                                                                re-verify their vehicle.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- PM Insight Banner: Why Micro-Penalties vs Hard Bans -->
+                                            <div class="pm-guardrail-banner">
+                                                <div class="pm-banner-icon">🛡️</div>
+                                                <div class="pm-banner-content">
+                                                    <div class="pm-banner-title">PM Strategic Guardrail: Supply
+                                                        Protection & Behavioral
+                                                        Economics</div>
+                                                    <div class="pm-banner-text">
+                                                        <strong>Why X% Margin Penalties instead of Hard Bans?</strong>
+                                                        Banning drivers destroys
+                                                        fleet supply, increases rider wait times, and triggers surge
+                                                        pricing. Deducting an
+                                                        <strong>X% fee from ride charges</strong> makes vehicle fraud
+                                                        economically unviable
+                                                        while keeping supply on the road.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 12 Actual Content -->
+                                    <div id="slide-view-12" class="slide-view">
+                                        <div class="slide-11-container">
+                                            <!-- Header -->
+                                            <div class="slide-11-top">
+                                                <h2 class="slide-11-h2">Measuring Success: Did We Actually Move the
+                                                    Needle?</h2>
+                                                <p class="slide-11-sub">We don't just ship features; we measure causal
+                                                    business impact. Here is
+                                                    our rigorous data framework to measure safety and conversion
+                                                    outcomes.</p>
+                                            </div>
+
+                                            <!-- 1. NORTH STAR HERO CARD -->
+                                            <div class="north-star-card">
+                                                <div class="ns-badge-row">
+                                                    <span class="ns-badge">⭐ North Star Metric</span>
+                                                    <span class="ns-sub-tag">Primary Outcome</span>
+                                                </div>
+                                                <div class="ns-title">
+                                                    Decrease in Rider-Initiated 'Vehicle Mismatch' Cancellations
+                                                    <span>within the first 3
+                                                        minutes of allocation</span>.
+                                                </div>
+                                                <div class="ns-description">
+                                                    <strong>🎯 Why We Track It:</strong> Isolates the exact problem. A
+                                                    drop here proves the
+                                                    pre-ride trust badge successfully eliminated immediate safety
+                                                    anxiety before driver arrival.
+                                                </div>
+                                            </div>
+
+                                            <!-- 2. SECONDARY METRICS: 3-COLUMN GRID -->
+                                            <div class="secondary-grid">
+                                                <!-- Awareness Metric -->
+                                                <div class="metric-box b-awareness">
+                                                    <div>
+                                                        <div class="metric-header">
+                                                            <span class="metric-pill">👁️ Awareness</span>
+                                                            <span class="metric-target">Target: ~100%</span>
+                                                        </div>
+                                                        <div class="metric-name">Prompt Impression Rate</div>
+                                                        <div class="metric-body">
+                                                            Ratio of <strong>(Impressions / Completed Rides)</strong> to
+                                                            verify reliable UI
+                                                            loading across all devices, OS, and network states.
+                                                        </div>
+                                                    </div>
+                                                    <div class="metric-callout">
+                                                        <strong>Why Rate vs Volume:</strong> Rates ensure zero silent
+                                                        rendering failures,
+                                                        whereas raw volume fluctuates with marketing traffic.
+                                                    </div>
+                                                </div>
+
+                                                <!-- Adoption Metric -->
+                                                <div class="metric-box b-adoption">
+                                                    <div>
+                                                        <div class="metric-header">
+                                                            <span class="metric-pill">🎯 Adoption</span>
+                                                            <span class="metric-target">Target: >40%</span>
+                                                        </div>
+                                                        <div class="metric-name">Verification Interaction Rate</div>
+                                                        <div class="metric-body">
+                                                            Percentage of riders actively selecting a feedback tag
+                                                            (<em>"Same Plate"</em> vs
+                                                            <em>"Different Plate"</em>) under the rating stars.
+                                                        </div>
+                                                    </div>
+                                                    <div class="metric-callout">
+                                                        <strong>Data Quality Guard:</strong> Monitored alongside
+                                                        <strong>Time-to-Click
+                                                            (>0.5s)</strong> to eliminate blind reflex dismissals.
+                                                    </div>
+                                                </div>
+
+                                                <!-- Guardrail Metric -->
+                                                <div class="metric-box b-guardrail">
+                                                    <div>
+                                                        <div class="metric-header">
+                                                            <span class="metric-pill">🛡️ Guardrail</span>
+                                                            <span class="metric-target">Do Not Disturb</span>
+                                                        </div>
+                                                        <div class="metric-name">Rating & Tipping Completion Rate</div>
+                                                        <div class="metric-body">
+                                                            Monitors core feedback funnel health to ensure the added
+                                                            verification tag causes
+                                                            zero drop-off in post-ride reviews or driver tips.
+                                                        </div>
+                                                    </div>
+                                                    <div class="metric-callout">
+                                                        <strong>Zero Cannibalization:</strong> Adding safety tags must
+                                                        not harm driver tipping
+                                                        income or overall marketplace satisfaction.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- 3. BOTTOM TAKEAWAY BANNER -->
+                                            <div class="bottom-takeaway-banner">
+                                                <div class="takeaway-text">
+                                                    <strong>🎯 Causal Impact vs. Vanity Metrics:</strong> By measuring
+                                                    <strong>constrained
+                                                        rates</strong> instead of raw volume spikes and auditing
+                                                    <strong>Time-to-Click</strong>,
+                                                    we ensure every tracked data point reflects authentic user trust and
+                                                    real fleet compliance.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Default Placeholder for other slides -->
+                                    <div id="slide-view-default" class="slide-view view-default">
+                                        <div class="slide-number-badge" id="slide-badge">Slide X / 10</div>
+                                        <h1 class="slide-placeholder-title" id="slide-title">[Slide X Content Area]</h1>
+                                        <p class="slide-placeholder-sub" id="slide-sub">Placeholder</p>
+                                    </div>
+
+                                </div>
+
+                                <!-- Bottom Bar (Variation 6) -->
+                                <div class="bottom-bar">
+                                    <div class="v4-hud">
+                                        <div class="distance-text" id="bottom-distance">
+                                            <span>📍</span> 11 Stops Left
+                                        </div>
+                                        <div class="separator"></div>
+                                        <div class="bar-text" id="bottom-text">Setting the Context: The Rapido Trust
+                                            Gap.</div>
+                                        <div class="timeline-track">
+                                            <div class="timeline-progress" id="bottom-progress"></div>
+                                            <!-- 13 Nodes -->
+                                            <div class="node" style="left: 0.00%;"></div>
+                                            <div class="node" style="left: 9.09%;"></div>
+                                            <div class="node" style="left: 18.18%;"></div>
+                                            <div class="node" style="left: 27.27%;"></div>
+                                            <div class="node" style="left: 36.36%;"></div>
+                                            <div class="node" style="left: 45.45%;"></div>
+                                            <div class="node" style="left: 54.55%;"></div>
+                                            <div class="node" style="left: 63.64%;"></div>
+                                            <div class="node" style="left: 72.73%;"></div>
+                                            <div class="node" style="left: 81.82%;"></div>
+                                            <div class="node" style="left: 90.91%;"></div>
+                                            <div class="node" style="left: 100.00%;"></div>
+
+                                            <img src="../../Standalone_Product_Rapido_Case_Study/rapido bike.png"
+                                                class="bike-icon" id="bottom-bike" alt="Rapido Bike">
+                                        </div>
+                                        <div class="destination">🏁</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- RIGHT NAV ARROW (>) -->
+                        <button class="nav-arrow-btn nav-next" id="next-btn" aria-label="Next Slide"
+                            onclick="nextSlide()" title="Next Slide">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+
+                    </div>
+
+                    <!-- 3. CENTERED BUTTON -->
+                    <div class="cs-button-wrapper">
+                        <a href="#case-study" class="btn-read-case-study" id="ctaBtn">
+                            <span>Read Full Case Study</span>
+                            <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: 03. Perspectives & Essays (Concept B: Warm Studio Ambient Wash) -->
+            <section class="freed-editorial-section" id="section-articles-teaser">
+                <div class="ambient-studio-box">
+                    <!-- 1. CENTERED SECTION TITLE -->
+                    <header class="editorial-section-header reveal-node">
+                        <div class="ambient-glow-capsule">
+                            <span class="ambient-star">✦</span>
+                            <span class="editorial-section-kicker">03 / PERSPECTIVES & ESSAYS</span>
+                        </div>
+                        <h2 class="editorial-section-title">Articles</h2>
+                    </header>
+
+                    <!-- Visual Thesis Cards Grid -->
+                    <div class="article-cards-grid" id="home-articles-grid" style="width: 100%;">
+                        <!-- Injected dynamically from data.js -->
+                    </div>
+
+                    <!-- Centered Bottom Action CTA -->
+                    <div class="editorial-section-bottom-action">
+                        <a href="#articles" class="btn btn-secondary">
+                            <span>Explore All Essays & Written Notes</span>
+                            <span style="font-size: 14px;">→</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            </div>
+
+        </div>
+
+        <!-- ========================================================================= -->
+        <!-- DEDICATED SUB-VIEWS (SWITCHED SEAMLESSLY VIA HASH ROUTING)                 -->
+        <!-- ========================================================================= -->
+        <div id="view-products" class="view site-wrapper"></div>
+        <div id="view-teardown" class="view site-wrapper"></div>
+        <div id="view-articles" class="view site-wrapper"></div>
+        <div id="view-article-detail" class="view site-wrapper"></div>
+        <div id="view-how-i-work" class="view site-wrapper"></div>
+
+    </main>
+
+    <!-- ========================================================================= -->
+    <!-- FOOTER & CONNECT: THE VISUAL GRAVITY CLUSTER (MEERA CHANDRAN SPEC)        -->
+    <!-- ========================================================================= -->
+    <footer class="site-footer" id="contact-section">
+        <div class="site-wrapper">
+            <div class="connect-container">
+                <!-- Motivating High-Conversion Header -->
+                <header class="connect-header reveal-node">
+                    <span class="connect-kicker">04 / LET'S TALK PRODUCT</span>
+                    <h2 class="connect-title">Have a role, an idea, or a critique? Let's talk.</h2>
+                    <p class="connect-subtitle">
+                        Whether you have an open PM opportunity, want to tear down an interface together, or challenge one of my teardowns—I reply to every thoughtful note.
+                    </p>
+                </header>
+
+                <!-- The Visual Gravity Cluster -->
+                <div class="cluster-layout">
+                    <!-- Tier 1: Direct Reach (Center of Visual Gravity) -->
+                    <div class="cluster-primary-row">
+                        <a href="mailto:nandanbhole27@gmail.com" class="btn-brand btn-primary-action btn-email"
+                            title="Send an Email">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                            <span>Email Me (nandanbhole27@gmail.com)</span>
+                            <span class="btn-arrow">↗</span>
+                        </a>
+
+                        <a href="https://wa.me/919999999999" target="_blank" rel="noopener"
+                            class="btn-brand btn-primary-action btn-whatsapp" title="Message on WhatsApp">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                            <span>Chat on WhatsApp</span>
+                            <span class="btn-arrow">↗</span>
+                        </a>
+                    </div>
+
+                    <!-- Tier 2: Social Footprint Triad -->
+                    <div class="cluster-secondary-row">
+                        <a href="https://www.linkedin.com/in/nandan-bhole-" target="_blank" rel="noopener"
+                            class="btn-brand btn-secondary-action btn-linkedin" title="LinkedIn Profile">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 0 0-1.6 1.6 1.6 1.6 0 0 0 1.6 1.6 1.6 1.6 0 0 0 1.6-1.6c0-.89-.71-1.6-1.6-1.6Z" />
+                            </svg>
+                            <span>LinkedIn</span>
+                            <span class="btn-arrow">↗</span>
+                        </a>
+
+                        <a href="https://x.com/NandanBhole" target="_blank" rel="noopener"
+                            class="btn-brand btn-secondary-action btn-x" title="X (Twitter)">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                            <span>X (Twitter)</span>
+                            <span class="btn-arrow">↗</span>
+                        </a>
+
+                        <a href="https://instagram.com/nandan_bhole" target="_blank" rel="noopener"
+                            class="btn-brand btn-secondary-action btn-instagram" title="Instagram">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                            <span>Instagram</span>
+                            <span class="btn-arrow">↗</span>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- LIGHTWEIGHT IN-SITU PRODUCT VIDEO MODAL                                  -->
+    <!-- ========================================================================= -->
+    <div class="video-modal-backdrop" id="videoModal" onclick="closeVideoModal(event)">
+        <div class="video-modal-dialog" onclick="event.stopPropagation()">
+            <div class="video-modal-header">
+                <h4 class="video-modal-title" id="videoModalTitle">Product Demo Video</h4>
+                <button type="button" class="video-modal-close" onclick="closeVideoModal()"
+                    aria-label="Close video">&times;</button>
+            </div>
+            <div class="video-modal-body">
+                <!-- Video player view (Active when videoUrl is provided) -->
+                <div class="video-player-wrapper" id="videoPlayerWrapper" style="display: none; width: 100%;">
+                    <div class="video-frame-container">
+                        <video id="videoModalPlayer" playsinline controls preload="auto" class="video-modal-player">
+                            <source src="" type="video/mp4">
+                            Your browser does not support HTML5 video playback.
+                        </video>
+                    </div>
+                    <div class="video-modal-caption">
+                        <div class="video-caption-text">
+                            <h5 class="video-caption-title" id="videoModalSub">Product Walkthrough</h5>
+                            <p class="video-caption-desc" id="videoModalDesc">60-second interactive demonstration.</p>
+                        </div>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="pfc-btn-primary" id="videoModalLaunchBtn" style="font-size: 12.5px; padding: 7px 16px; white-space: nowrap; flex-shrink: 0;">
+                            <span>Launch Live App</span>
+                            <span class="pfc-btn-arrow">&nearr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Fallback placeholder view (Active when no videoUrl is provided yet) -->
+                <div class="video-placeholder-wrapper" id="videoPlaceholderWrapper" style="display: flex;">
+                    <div class="video-placeholder-icon">&#9654;</div>
+                    <h5 class="video-modal-sub" id="videoPlaceholderSub">
+                        Product Walkthrough Video
+                    </h5>
+                    <p class="video-modal-desc" id="videoPlaceholderDesc">
+                        A focused 60-second product demonstration video will play directly in this space.
+                    </p>
+                    <button type="button" class="pfc-btn-primary" onclick="closeVideoModal()"
+                        style="font-size: 12.5px; padding: 7px 16px;">
+                        Close Preview (Esc)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FULL VNIT CAMPUS PLAZA LIGHTBOX (ARCHIVAL FROSTED-GLASS, ZERO-PITCH-BLACK)-->
+    <!-- Pure image view with zero clutter, dismisses on click anywhere or Esc    -->
+    <!-- ========================================================================= -->
+    <div class="campus-modal-backdrop" id="campusModal" onclick="closeCampusModal()" role="dialog" aria-modal="true" aria-label="VNIT Nagpur Campus Plaza">
+        <button type="button" class="campus-modal-close" onclick="closeCampusModal()" aria-label="Close view">&times;</button>
+        <div class="campus-modal-dialog" onclick="closeCampusModal()">
+            <img src="assets/images/vnit_banner.jpg" alt="Visvesvaraya National Institute of Technology Nagpur Campus Plaza" class="campus-modal-img">
+        </div>
+    </div>
+
+    <!-- Scripts: Loaded in dependency order with zero build overhead -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/deck.js"></script>
+</body>
+
+</html>
