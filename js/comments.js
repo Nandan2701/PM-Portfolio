@@ -7,6 +7,18 @@
 const STORAGE_KEY = "nexus_portfolio_comments_v1";
 
 const DEFAULT_COMMENTS = {
+  "builderbase": [
+    {
+      author: "Aditya S. (Product Lead)",
+      time: "2 days ago",
+      text: "Having an indexed discovery engine for our alumni ecosystem is invaluable. Instant reference for founders and juniors alike."
+    },
+    {
+      author: "Rohan K. (Founding Eng)",
+      time: "4 days ago",
+      text: "The directory organization, instant 0ms search, and 1-click founder reach is exceptionally clean. Essential ecosystem infrastructure."
+    }
+  ],
   "saarum": [
     {
       author: "Aditya S. (Product Lead)",

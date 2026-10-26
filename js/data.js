@@ -20,25 +20,25 @@ const PORTFOLIO_DATA = {
   // 1. PRODUCTS (Built & Active)
   products: [
     {
-      id: "saarum",
-      name: "Saarum",
-      tagline: "The Cognitive Friction Journal",
-      headline: "Turn fast AI answers into lasting memory",
-      subheadline: "AI compresses 10 days of research into 5 minutes, but effortless learning rarely sticks. Saarum helps you capture your daily takeaways, so you can go back into past days and easily remember what you learned from AI.",
-      status: "Live Application",
+      id: "builderbase",
+      name: "Builderbase",
+      tagline: "The Alumni Venture Discovery Engine",
+      headline: "Discover every startup and company built by VNITians",
+      subheadline: "A curated discovery platform mapping 33+ companies founded by VNIT alumni. Engineered with zero-latency in-memory filtering, department telemetry, and 1-click verified founder reach to help juniors find leverage and draw inspiration.",
+      status: "Live Platform",
       statusType: "live",
-      shortSummary: "AI compresses 10 days of research into 5 minutes, but effortless learning rarely sticks. Saarum helps you capture your daily takeaways, so you can go back into past days and easily remember what you learned from AI.",
+      shortSummary: "A curated discovery platform mapping 33+ companies founded by VNIT alumni. Engineered with zero-latency in-memory filtering, department telemetry, and 1-click verified founder reach to help juniors find leverage and draw inspiration.",
       features: [
-        "Hourly 24-hr ledger with hard 140-char constraint",
-        "Infinite voice dictation & raw stream canvas",
-        "Zero-latency Chrome local storage (0ms sync)",
-        "Bedtime active recall prompt engine"
+        "33+ verified alumni startups indexed with live metrics",
+        "Instant zero-latency search & multi-department telemetry",
+        "1-click direct verified founder reach (LinkedIn & X)",
+        "Self-serve venture submission pipeline with live receipt review"
       ],
-      metrics: "0ms Local Latency • 100% Offline Capable • Zero Bloat",
-      liveUrl: "https://saarum.vercel.app/",
-      githubUrl: "https://github.com/Nandan2701/Saarum",
-      videoDesc: "A 60-second walkthrough showing the hourly 1–2 bullet ledger and bedtime active recall consolidation in action.",
-      tags: ["Productivity"]
+      metrics: "33+ Startups • 0ms Search Latency • 1-Click Founder Reach",
+      liveUrl: "https://vnit-builderbase.vercel.app/",
+      githubUrl: "https://github.com/Nandan2701/vnit-builderbase",
+      videoDesc: "An interactive walkthrough exploring the live alumni venture index, filterable department telemetry, and 1-click direct founder reach.",
+      tags: ["Ecosystem", "Discovery"]
     },
     {
       id: "tulam",

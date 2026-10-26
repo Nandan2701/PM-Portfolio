@@ -60,7 +60,7 @@ Nexus-Portfolio/
    - Highlights Nandan's active status: *Seeking 6-Month On-Site PM Internship in Bangalore / Mumbai / Gurugram / Pune / Hyderabad*.
    - 1-click links to LinkedIn, GitHub, and email.
 2. **1-Click Live Product Launching:**
-   - Products (Saarum, Focus-Matrix) with <100-word summaries, technical metrics, and 1-click launch.
+   - Products (Builderbase, Tulam) with <100-word summaries, technical metrics, and 1-click launch.
 3. **Interactive Community Comments:**
    - Allows visitors to post feedback and read authentic comments directly on product cards without server overhead.
 4. **Distraction-Free Slide-Over Reading Drawer:**

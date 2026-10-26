@@ -10,7 +10,7 @@
 | Requirement from Nexus | Implementation Details | Status |
 | :--- | :--- | :--- |
 | **01_Idea / 04_Core Problem** | Zero cognitive load, maximum 4-5 high-signal front page sections. | Complete |
-| **06_Expectation** | 1-click live product launch (Saarum, Focus-Matrix), 1-click article reading. | Complete |
+| **06_Expectation** | 1-click live product launch (Builderbase, Tulam), 1-click article reading. | Complete |
 | **07_Don't Want** | No personal life trivia, no generic vibe-coded template look, no deep navigation trees. | Complete |
 | **08_About Me** | Nandan, 21-year-old VNIT Nagpur final-year engineering student. | Complete |
 | **09_How I Work** | 2-Step Inversion Methodology (Failure vector elimination + mental pre-simulation). | Complete |
